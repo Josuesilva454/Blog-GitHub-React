@@ -23,6 +23,15 @@ export const UserCardContainer= styled("div",{
 });
 
 export const UserCardContent= styled("div",{
+    display: "flex",
+    flex: 1,
+    flexDirection: "column",
+
+
+    p:{
+        marginBottom: "24px",
+        marginTop: "8px",
+    }
 
 
 });
@@ -53,20 +62,15 @@ export const UserCardInfo= styled("div",{
     justifyContent: "space-between",
     alignItems:"center",
     width: "100%",
-  a: {
-      display: "flex",
-      alignItems: "center",
-      color: "$vrand",
-      textDecoration: "none",
-      textTransform: "uppercase",
-      fontWeight: "bold",
-      fontSize: "12px",
+    gap: "24px",
   
-      svg: {
-          marginLeft: "8px",
-      },
-  },
-  
+    span : {
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+
+    }
   });
+
   
 
