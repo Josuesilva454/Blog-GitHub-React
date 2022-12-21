@@ -34,7 +34,7 @@ const {data} = await axios.get(`Https://api.github.com/users/${GITHUB_USERNAME}`
     
   const user = {
     name: data.name,
-    company: data.company,
+    company: data.companyy,
     bio: data.bio,
     follwers: data.followers,
     url : data.html_url,
