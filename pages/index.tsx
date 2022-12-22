@@ -6,13 +6,13 @@ import { UserCard } from '../src/components/UserCard'
 const GITHUB_USERNAME = "Josuesilva454"
 
 interface User {
-  name: String,
-  company: String,
-  bio: String,
+  name: string,
+  company: string,
+  bio: string,
   follwers: number,
-  url : String,
-  login: String,
-  avatar: String
+  url : string,
+  login: string,
+  avatar: string
 }
 
 interface HomeProps {
@@ -24,7 +24,7 @@ export default function Home ({user }: HomeProps) {
   return (
     <div>
       <Header />
-      <UserCard user ={user}/>
+      <UserCard user = {user}/>
     </div>
   )
 }
@@ -35,6 +35,7 @@ const {data} = await axios.get(`Https://api.github.com/users/${GITHUB_USERNAME}`
   const user = {
     name: data.name,
     bio: data.bio,
+    company: data.company,
     follwers: data.followers,
     url : data.html_url,
     avatar: data.avatar_url,

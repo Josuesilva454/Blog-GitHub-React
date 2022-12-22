@@ -3,13 +3,13 @@ import { Layout } from "./Layout";
 import { UserCardContainer, UserCardContent, UserCardInfo, UserCardNameContainer } from "./style";
 
 interface User {
-    name: String,
-    company: String,
-    bio: String,
+    name: string,
+    company: string,
+    bio: string,
     follwers: number,
-    url : String,
+    url : string,
     login: String,
-    avatar: String,
+    avatar: string,
   }
   
   interface UserCardProps {
@@ -38,18 +38,25 @@ export function UserCard ({user}: UserCardProps) {
 
                        {user.login}
                     </span>
-                    <span>
-                        <FaBuilding size= "18px" color="#3A536B"/>
-
-                        {user.company}
-                    </span>
+                   
+               
                     <span>
                         <FaUserFriends size= "18px" color="#3A536B"/>
 
                         {user.follwers}
                     </span>
+                   
                 </UserCardInfo>
+                <div className='container'> 
+                <span>
+                        <FaBuilding size= "18px" height= "150" color="#3A536B"/>
+                        {user.company}
+                       <a> Meu nome e Josué tenho 25 anos, só uma pessoal comunicativa, calmo, tranquilo, amo trabalhar em equipe, sou apaixonado com a tecnologia. Também gosto de passa meus conhecimento e ensinar, não trabalho na área, estou em busca de uma oportunidade pode ser a função desenvolvimento ou suporte, possui conhecimento laravel, spring boot, java script, c#, java, python, Reactjs, kanban, docker, git, Jira, mvc, um pouco de conhecimento Redes e linux. </a>                    </span>
+                       </div>
+                      
+                      
         </UserCardContent>
+        
         </UserCardContainer>
         </Layout>
        

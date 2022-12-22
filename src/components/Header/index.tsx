@@ -1,11 +1,16 @@
-import { HeaderContainer } from "./styles";
+import { Container, HeaderContainer } from "./styles";
 
 export function Header() {
     return (
      
         <HeaderContainer>
-         <img src="/logo.svg"  alt="GitHub Blog" />
+           
+         <img src="/logo.svg"  alt="portfolio" />
+        
+         
         </HeaderContainer>
+        
+      
     )
         
     
